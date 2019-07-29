@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+        <link href="src/styles.css"></link>
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
+        <script>
+        $('document').ready(function() {
+
+                $(".bottomnav").click(function(event) {
+                        $(this).find('span').removeClass('ion-ios-radio-button-off');
+                        $(this).find('span').addClass('ion-ios-radio-button-on');
+                });
+        });
+        
+        </script>
+</head>
+
+<body>
+	<div id="app">
+	<div class="bottomnav">
+            <a href="#header"><span class="icon ion-android-radio-button-on active">Header</span></a>
+            <a href="#about"><span class="icon ion-android-radio-button-off">About</span></a>
+            <a href="#overview"><span class="icon ion-android-radio-button-off">Overview</span></a>
+            <a href="#web"><span class="icon ion-android-radio-button-off">Web</span></a>
+            <a href="#drone"><span class="icon ion-android-radio-button-off">Drone</span></a>
+            <a href="#studio"><span class="icon ion-android-radio-button-off"><Studio/span></a>
+            <a href="#portfolio"><span class="icon ion-android-radio-button-off">Portfolio</span></a>
+            <a href="#contact"><span class="icon ion-android-radio-button-off">Contact</span></a>
+        </div>
+
+<div class="container" id="container">
+        <div id="player">
+       <section class="card cardwhite" id="1">
+                <object>
+                        <h2>Section 1</h2>
+                        <p>Description</p>
+                  
+                </object>
+            </section>
+
+    <section class="card cardblack" id="2">
+                <object>
+                        <h2>Section 2</h2>
+                        <p>Description</p>
+                    
+                </object>
+            </section>
+
+    <section class="card cardwhite" id="3">
+                <object>
+                        <h2>Section 3</h2>
+                        <p>Description</p>
+                 
+                </object>
+            </section>
+</div>
+</div>
+	</div>
+
+	
+</body>
+
+</html>

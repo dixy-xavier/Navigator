@@ -1,2 +1,0 @@
-# Navigator
-Created with CodeSandbox

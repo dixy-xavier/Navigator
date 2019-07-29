@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #000;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-size: 7px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 9999;
+    padding: 30px;
+    background-color: rgba(220, 240, 250);
+}
+
+.bottomnav span {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+  color: white;
+}
+
+.bottomnav span:hover {
+  color: white;
+}
+
+.bottomnav span.active {
+  color: white;
+}
+
+#container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(270deg) translateX(-100vh);
+  transform-origin: top left;
+  position: absolute;
+  width: 100vh;
+  height: 100vw;
+  white-space: nowrap;
+  scroll-snap-type: y mandatory;
+}
+
+#container .card {
+  width: 100vw;
+  height: 100vh;
+  display: inline-flex;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+#player {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  font-size: 0;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  /*        position: absolute;*/
+}
+
+#player section > object {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+section object > div {
+  white-space: normal;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.cardwhite {
+  color: white;
+  background-color: black;
+}
+
+.cardblack {
+  color: black;
+  background-color: white;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "IBM Plex Serif", sans-serif;
+}
+
+p {
+  font-size: 10px;
+  margin-bottom: 15px;
+  font-weight: 100;
+  font-family: "IBM Plex Sans", sans-serif;
+}
